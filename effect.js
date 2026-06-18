@@ -1,0 +1,61 @@
+  $(function(){
+        $('#menu').slicknav({
+            label:"",
+            brand:"SHIVAM"
+        });
+    });
+    $(document).ready(function() {
+  $(".skitter-large").skitter({
+    dots:false,
+    navigation:true,
+    theme:"clean"
+  });
+});
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:false,
+            loop:true
+        }
+    }
+  });
+});
+
+ $(document).ready(function() {
+  $(".bar-seo").animate({"width":"60%"},1300,function(){
+     $(".bar-html").animate({"width":"90%"},1000,function(){
+      $(".bar-css").animate({"width":"90%"},1000,function(){
+        $(".bar-js").animate({"width":"70%"},1000,function(){
+          $(".bar-jquery").animate({"width":"75%"},1000,function(){
+            $(".bar-bootstrap").animate({"width":"80%"},1000,function(){
+               $(".bar-figma").animate({"width":"70%"},1200);
+            });
+          });
+        });
+      });
+     });
+  });
+ 
+});
+
+/* 
+ $(".bar-html").animate({"width":"90%"},1500);
+  $(".bar-css").animate({"width":"90%"},1800);
+  $(".bar-js").animate({"width":"70%"},1200);
+  $(".bar-jquery").animate({"width":"75%"},1900);
+  $(".bar-bootstrap").animate({"width":"80%"},2000);
+  $(".bar-figma").animate({"width":"70%"},1200);
+*/
